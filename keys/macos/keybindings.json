@@ -1,6 +1,6 @@
 [
     {
-        "key": "shift+cmd+j",
+        "key": "cmd+shift+j",
         "command": "workbench.action.toggleMaximizedPanel"
     },
     {
@@ -12,7 +12,7 @@
         "command": "composerMode.44c16112-4974-40a8-a3f5-215b0c475894"
     },
     {
-        "key": "shift+cmd+i",
+        "key": "cmd+shift+i",
         "command": "composerMode.agent"
     },
     {
@@ -20,49 +20,14 @@
         "command": "composerMode.chat"
     },
     {
-        "key": "cmd+shift+]",
-        "command": "workbench.action.nextEditor",
-        "when": "editorFocus"
-    },
-    {
-        "key": "cmd+shift+]",
-        "command": "workbench.action.terminal.focusNext",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "cmd+shift+]",
-        "command": "workbench.action.nextEditorInGroup",
-        "when": "focusedView =~ /^workbench.panel.aichat.view/"
-    },
-    {
-        "key": "cmd+shift+[",
-        "command": "workbench.action.previousEditor",
-        "when": "editorFocus"
-    },
-    {
-        "key": "cmd+shift+[",
-        "command": "workbench.action.terminal.focusPrevious",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "cmd+shift+[",
-        "command": "workbench.action.previousEditorInGroup",
-        "when": "focusedView =~ /^workbench.panel.aichat.view/"
-    },
-    {
-        "key": "shift+cmd+]",
-        "command": "composer.nextChatTab",
-        "when": "focusedView == /^workbench.panel.aichat.view/"
-    },
-    {
-        "key": "shift+cmd+[",
-        "command": "composer.previousChatTab",
-        "when": "focusedView == /^workbench.panel.aichat.view/"
-    },
-    {
         "key": "cmd+alt+b",
         "command": "-aichat.close-sidebar",
         "when": "view.workbench.panel.aichat.view.visible"
+    },
+    {
+        "key": "alt+cmd+ctrl+b",
+        "command": "aichat.newchataction",
+        "when": "!view.workbench.panel.aichat.view.visible"
     },
     {
         "key": "alt+cmd+b",
@@ -70,27 +35,35 @@
         "when": "view.workbench.panel.aichat.view.visible"
     },
     {
-        "key": "shift+cmd+ctrl+]",
+        "key": "cmd+shift+ctrl+]",
         "command": "-aichat.insertselectionintochat"
     },
     {
-        "key": "cmd+[",
-        "command": "-composer.previousChatTab",
-        "when": "composerFocused"
+        "key": "cmd+shift+]",
+        "command": "workbench.action.nextEditor"
     },
     {
-        "key": "alt+cmd+b",
-        "command": "aichat.newchataction",
-        "when": "!view.workbench.panel.aichat.view.visible"
+        "key": "cmd+shift+[",
+        "command": "workbench.action.previousEditor"
     },
     {
-        "key": "cmd+]",
-        "command": "-aichat.newchataction",
-        "when": "!view.workbench.panel.aichat.view.visible"
+        "key": "cmd+shift+]",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
     },
     {
-        "key": "cmd+]",
-        "command": "-aichat.close-sidebar",
-        "when": "view.workbench.panel.aichat.view.visible"
+        "key": "cmd+shift+[",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
     },
+    {
+        "key": "cmd+shift+]",
+        "command": "composer.nextChatTab",
+        "when": "focusedView =~ /^workbench.panel.aichat.view/"
+    },
+    {
+        "key": "cmd+shift+[",
+        "command": "composer.previousChatTab",
+        "when": "focusedView =~ /^workbench.panel.aichat.view/"
+    }
 ]
